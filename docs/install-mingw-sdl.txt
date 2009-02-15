@@ -1,0 +1,13 @@
+Short notice how to install mingw32 sdl on linux.
+
+1. Install mingw
+2. Find out:
+    * What's the name of the compiler (e.g. i586-mingw32-gcc)
+    * What's the mingw directory (e.g. /usr/i586-mingw32)
+3. Configure SDL like that (maybe you want to install dx first):
+    ./configure --host=i586-mingw32
+4. make
+5. Then just install - but:
+   make PREFIX=/usr/i586-mingw32/ install
+
+Happy coding
