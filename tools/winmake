@@ -1,0 +1,5 @@
+#! /bin/bash
+
+# You can use this shortcut for crosscompiling games made by Simon Goller.
+
+make HOST=i586-mingw32msvc- SDL_BIN_PREFIX=/usr/i586-mingw32msvc/bin/ BIN_SUFFIX=.exe $@

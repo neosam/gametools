@@ -1,0 +1,24 @@
+SetCompress force
+SetCompressor /SOLID lzma
+
+Name "Test"
+
+outFile "setup.exe"
+
+InstallDir $PROGRAMFILES\Test
+
+Page directory
+Page instfiles
+
+UninstPage uninstConfirm
+UninstPage instfiles
+
+section "Test"
+
+SetOutPath $INSTDIR
+File test.exe
+
+CreateDirectory "$SMPROGRAMS\Test"
+CreateShortCut "$SMPROGRAMS\Test\Test.lnk" "$INSTDIR\test.exe"
+
+SectionEnd
