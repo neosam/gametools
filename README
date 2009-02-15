@@ -1,0 +1,12 @@
+Neosam's gametools
+
+These project is a summary of c funtions for game programming and cross
+compiling using mingw32.
+
+I hope it's useful for you.
+
+Makefile and tools/winmake
+--------------------------
+You can use this Makefile for cross compiling.  Just set HOST, SDL_BIN_PREFIX
+and BIN_SUFFIX to get a win32 exe.  If this is too much work for you then
+just edit tools/winmake and type winmake instead of make.
